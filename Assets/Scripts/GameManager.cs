@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
 	[SerializeField] private AudioClip zipUp;
 	[SerializeField] private AudioClip zipDown;
 
+	[SerializeField] private GameObject stone;
+
 	private bool holdingStone;
 	private bool inventoryOpen;
 	private bool firstTimePickup;
@@ -64,11 +66,15 @@ public class GameManager : MonoBehaviour
 
 		holdingStone = true;
 		firstTimePickup = false;
+
+		stone.transform.parent = player.transform;
 	}
 
 	public void DropStone()
 	{
 		holdingStone = false;
+
+		stone.transform.parent = null;
 	}
 
 	private void ToggleInventory(InputAction.CallbackContext context)

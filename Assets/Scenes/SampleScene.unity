@@ -7312,6 +7312,7 @@ MonoBehaviour:
   audioSource: {fileID: 1188612232}
   zipUp: {fileID: 8300000, guid: bc16aa6171cbd984f90247cfb985ba51, type: 3}
   zipDown: {fileID: 8300000, guid: f7f681aed2b7ac5409d63eb0ad9a6533, type: 3}
+  stone: {fileID: 61848281}
 --- !u!1 &820492305
 GameObject:
   m_ObjectHideFlags: 0
